@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Employee Tracker</title>
+  </head>
+  <body>
+    <main>
+      <section id="dataEntry">
+        <h1>Employee Tracking System</h1>
+        <form id="infoForm">
+          <input type="text" id="name" placeholder="Name" required />
+          <input type="number" id="age" placeholder="Age" min="16" required />
+          <input
+            type="number"
+            id="hours"
+            placeholder="Hours Per Week"
+            min="10"
+            max="60"
+            required
+          />
+          <input
+            type="number"
+            id="pay"
+            placeholder="Pay Rate Per Hour"
+            step="0.01"
+            required
+          />
+          <button type="submit" id="addNewEmp">Add Employee</button>
+        </form>
+      </section>
+
+      <section id="tableData">
+        <table>
+          <thead>
+            <tr>
+              <th>Employee ID</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Salary</th>
+              <th>Hours</th>
+              <th>Pay Rate</th>
+              <th>Type</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="employeeTable"></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="js/script.js" type="module" defer></script>
+  </body>
+</html>

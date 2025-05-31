@@ -1,0 +1,106 @@
+:root {
+  /* Colors */
+  --color-bg: #f9f9f9;
+  --color-primary: #444444;
+  --color-secondary: #f0f0f0;
+  --color-accent: #eeeeee;
+  --color-accent-hover: #dddddd;
+  --color-border: #cccccc;
+  --color-white: #ffffff;
+  --color-text: #333333;
+
+  /* Fonts */
+  --font-heading: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: Arial, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 2rem;
+  font-family: var(--font-body);
+}
+
+/* H1 Styles */
+h1 {
+  color: var(--color-primary);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+/* Input and Buttons */
+input,
+button {
+  background-color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 0.5rem 0.5rem;
+}
+
+/* Transiton Button Styling */
+button {
+  transition: var(--color-bg) 0.3s;
+}
+
+/* Button Hover */
+button:hover {
+  background-color: var(--color-accent-hover);
+}
+/* Table Styling */
+table {
+  background-color: var(--color-white);
+  box-shadow: 0 0 5px (0, 0, 0, 0.05);
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table Headers */
+th,
+td {
+  text-align: center;
+  border: 1px solid var(--color-border);
+  padding: 0.75rem;
+}
+
+th {
+  background-color: (var(--color-secondary));
+  color: var(--color-primary);
+}
+
+/* Table Buttons */
+td .button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  width: 100%;
+}
+td .button-group button {
+  flex: 1 1 auto;
+  min-width: 100px;
+}
+
+/* Mobile Styling */
+
+@media (max-width: 480px) {
+  td .button-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  td .button-group button {
+    width: 100%;
+  }
+}
